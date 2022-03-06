@@ -18,20 +18,66 @@
     width: 100%;
   }
   
-  #numbers__table td, #numbers__table th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  #numbers__table tr:nth-child(even){background-color: #a7b9ff;}
-  #numbers__table tr:nth-child(odd){background-color: #e0e6ff}
-  
-  #numbers__table tr:hover {background-color: #7f97f7;}
-  
-  #numbers__table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #2e2e36;
-    color: white;
-  }
+#numbers__table td, #numbers__table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#numbers__table tr:nth-child(even){background-color: #a7b9ff;}
+#numbers__table tr:nth-child(odd){background-color: #e0e6ff}
+
+#numbers__table tr:hover {background-color: #7f97f7;}
+
+#numbers__table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #2e2e36;
+  color: white;
+}
+
+.form__container {
+  margin: 50px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__container .numberInput {
+  height: 35px;
+  border: 1px solid #919ae2;
+  background-color: #fbfbff;
+  color: rgb(44, 43, 53);
+  width: 100%;
+  max-width: 160px;
+  border-radius: 10px;
+  padding: 0px 10px;
+  font-size: 12px;
+  margin-right: 30px;
+}
+
+.form__container .numberInput:focus{
+  border: 1px solid #1e20ff;
+  outline: none;
+}
+
+
+.form__container .submit {
+  border-radius: 16px;
+  border: 1px solid #74a2ff;
+  padding: 8px;
+  background: #7f7fff;
+  color: #fff;
+  transition:0.2s;
+  cursor: pointer;
+}
+
+.form__container .submit:hover {
+  border-radius: 16px;
+  border: 1px solid #74a2ff;
+  padding: 8px;
+  background: #6767fc;
+  color: #fff;
+  transition:0.2s;
+}
